@@ -1,0 +1,22 @@
+<Configuration>
+    <Appenders>
+        <Console>
+            <Name>STDOUT</Name>
+            <Target>SYSTEM_OUT</Target>
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger.%method - %msg%n</Pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger>
+            <Name>com.iamincendium</Name>
+            <Level>INFO</Level>
+        </Logger>
+        <Root>
+            <Level>TRACE</Level>
+            <AppenderRef ref="STDOUT" />
+        </Root>
+    </Loggers>
+</Configuration>
