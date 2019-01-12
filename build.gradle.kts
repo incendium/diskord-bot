@@ -10,11 +10,11 @@ version = "0.0.1-SNAPSHOT"
 repositories {
     jcenter()
     maven { url = uri("https://jitpack.io") }
-    mavenLocal()
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0")
     implementation("org.koin:koin-java:1.0.2")
     implementation("com.jessecorbett:diskord:1.0.0")
     implementation("org.apache.logging.log4j:log4j-api-kotlin:1.0.0")
